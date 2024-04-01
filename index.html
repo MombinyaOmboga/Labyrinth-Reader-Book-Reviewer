@@ -11,16 +11,18 @@
 <body>
     <header>
         <div class="logo">
-            <i class="fa-brands fa-magento"></i>
-            <div class="search bar">
-                <span class="material-symbols-outlined">search</span>
-                <input type="search" name="" id="">
+            <i class="fa-brands fa-magento" id="labyrinth"></i>
+            <div class="search-bar">
+                <span class="material-symbols-outlined" id="magnify">search</span>
+                <input type="search" name="search" id="search" placeholder="search for a book">
             </div>
-            <div class="login">
-                <span class="material-symbols-outlined">account_circle</span>
-            </div>
-            <div class="book-list">
-                <span class="material-symbols-outlined">library_books</span>
+            <div class="align">
+                <div class="login">
+                    <span class="material-symbols-outlined">account_circle</span>
+                </div>
+                <div class="book-list">
+                    <span class="material-symbols-outlined">library_books</span>
+                </div>
             </div>
         </div>
     </header>
@@ -33,22 +35,24 @@
         </div>
         <div class="intro">
             <img src="./media/henry-be--Pg63JThyCg-unsplash.jpg" alt="">
-            <h2>Welcome to Labyrinth Reader!</h2>
-            <p>This website is designed for book lovers who want a more immersive experience while reading their favorite books.</p>
-            <p>Join our community of readers who value thoughtful analysis and engaging discussions. Let's navigate the world of literature together, one review at a time.</p>
-            <div class="intro-buttons">
-                <button id="login-btn" value="login">Register</button>
-                <button id="book-review" value="review">Review Book</button>
+            <div class="hero">
+                <h2>Welcome to Labyrinth Reader!</h2>
+                <p>This website is designed for book lovers who want a more immersive experience while reading their favorite books.</p>
+                <p>Join our community of readers who value thoughtful analysis and engaging discussions. Let's navigate the world of literature together, one review at a time.</p>
+                <div class="intro-buttons">
+                    <button id="login-btn" value="login">Register</button>
+                    <button id="book-review" value="review">Review Book</button>
+                </div>
             </div>
+           
         </div>
         <div class="review">
             <h2>Review a Book</h2>
             <form action="/addBook" method="post">
-                @csrf
-                <label for="title">Title: <input type="text" name="title" id="title"></label><br><br>
-                <label for="author">Author(s): <input type="text" name="authors" id="author"></label><br><br>
-                <label for="genre">Genre: <input type="text" name="genre" id="genre"></label><br><br>
-                <label for="rating">Rating (1-5):  
+                <label for="title">Title<input type="text" name="title" id="title"></label><br><br>
+                <label for="author">Author(s) <input type="text" name="authors" id="author"></label><br><br>
+                <label for="genre">Genre<input type="text" name="genre" id="genre"></label><br><br>
+                <label for="rating">Rating (1-5) 
                     <select name="rating" id="rating">
                         <option value="1">1</option>
                         <option value="2">2</option>

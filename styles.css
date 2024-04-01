@@ -25,10 +25,27 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.search-bar {
-    margin-left: auto;
+.align, .search-bar{
+    display: flex;
+}
+
+#search{
+    padding: 8px;
+    width: 350px;
+    border: none;
+    background-color: rgb(235, 241, 239);
+    border-radius: 20px;
+}
+
+#magnify{
+    font-size: 30px;
+}
+
+#labyrinth{
+    font-size: 48px;
 }
 
 .login,
@@ -56,34 +73,56 @@ header {
 
 /* Intro section styles */
 .intro {
-    background-color: #fff;
+    background-color: #0c0a0a;
     padding: 20px;
     margin: 20px 0;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .intro img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 600px;
     margin-bottom: 20px;
+    opacity:  .4;
+}
+
+.hero{
+    position: absolute;
+    top: 60%;
+    color: white;
+    width: 70%;
+    font-size: 20px;
+    text-align: justify;
+    left: 20%;
 }
 
 .intro h2 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
+    font-size: 40px;
+    border-bottom: #f13463 solid 3px;
+    width: fit-content;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .intro p {
     margin-bottom: 20px;
 }
 
+.intro-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .intro-buttons button {
     margin-right: 10px;
-    padding: 10px 20px;
-    background-color: #333;
+    padding: 12px 25px;
+    background-color: #f13463;
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Review section styles */
@@ -93,15 +132,23 @@ header {
     margin-bottom: 20px;
 }
 
+.review h2{
+    border-bottom: #f13463 solid 3px;
+    width: fit-content;
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
 .review form label {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
 }
 
 .review form input[type="text"],
 .review form select,
 .review form textarea {
-    width: 100%;
+    width: 180%;
     padding: 10px;
     margin-bottom: 10px;
 }
