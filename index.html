@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labyrinth Reader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-brands fa-magento"></i>
+            <div class="search bar">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" name="" id="">
+            </div>
+            <div class="login">
+                <span class="material-symbols-outlined">account_circle</span>
+            </div>
+            <div class="book-list">
+                <span class="material-symbols-outlined">library_books</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="nav-bar">
+            <a href="#home" class="active">Home</a>
+            <a href="#submit">Submit Review</a>
+            <a href="#more">More</a>
+            <a href="#book">Shelf</a>
+        </div>
+        <div class="intro">
+            <img src="./media/henry-be--Pg63JThyCg-unsplash.jpg" alt="">
+            <h2>Welcome to Labyrinth Reader!</h2>
+            <p>This website is designed for book lovers who want a more immersive experience while reading their favorite books.</p>
+            <p>Join our community of readers who value thoughtful analysis and engaging discussions. Let's navigate the world of literature together, one review at a time.</p>
+            <div class="intro-buttons">
+                <button id="login-btn" value="login">Register</button>
+                <button id="book-review" value="review">Review Book</button>
+            </div>
+        </div>
+        <div class="review">
+            <h2>Review a Book</h2>
+            <form action="/addBook" method="post">
+                @csrf
+                <label for="title">Title: <input type="text" name="title" id="title"></label><br><br>
+                <label for="author">Author(s): <input type="text" name="authors" id="author"></label><br><br>
+                <label for="genre">Genre: <input type="text" name="genre" id="genre"></label><br><br>
+                <label for="rating">Rating (1-5):  
+                    <select name="rating" id="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label><br>
+                <label for="review">Review<textarea name="review" id="review" placeholder="Write your review here..."></textarea></label>
+                <div class="recommend">
+                    Would you recommend this book?
+                    <input type="checkbox" name="recommend" value="yes"/>Recommend
+                    <input type="checkbox" name="recommend" value="no"/>Don't Recommend<br><br>
+                </div>
+            </form>
+        </div>
+        <div class="book-shelf">
+            <h2>Top Books</h2>
+            <div class="book">
+                <img src="" alt="">
+                <div>
+                    <button id="add" value="add">Add to List</button>
+                    <button id="b-review" value="add">Review</button>
+                    <button id="buy" value="buy">Buy</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="" alt="">
+                <div>
+                    <button id="add" value="add">Add to List</button>
+                    <button id="b-review" value="add">Review</button>
+                    <button id="buy" value="buy">Buy</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="" alt="">
+                <div>
+                    <button id="add" value="add">Add to List</button>
+                    <button id="b-review" value="add">Review</button>
+                    <button id="buy" value="buy">Buy</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="" alt="">
+                <div>
+                    <button id="add" value="add">Add to List</button>
+                    <button id="b-review" value="add">Review</button>
+                    <button id="buy" value="buy">Buy</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="" alt="">
+                <div>
+                    <button id="add" value="add">Add to List</button>
+                    <button id="b-review" value="add">Review</button>
+                    <button id="buy" value="buy">Buy</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="" alt="">
+                <div>
+                    <button id="add" value="add">Add to List</button>
+                    <button id="b-review" value="add">Review</button>
+                    <button id="buy" value="buy">Buy</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="" alt="">
+                <div>
+                    <button id="add" value="add">Add to List</button>
+                    <button id="b-review" value="add">Review</button>
+                    <button id="buy" value="buy">Buy</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="" alt="">
+                <div>
+                    <button id="add" value="add">Add to List</button>
+                    <button id="b-review" value="add">Review</button>
+                    <button id="buy" value="buy">Buy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © 2021 BookStore. All rights reserved.
+    </footer>
+</body>
+</html>

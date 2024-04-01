@@ -1,0 +1,153 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin-left: auto;
+}
+
+.login,
+.book-list {
+    margin-left: 10px;
+}
+
+/* Navigation styles */
+.nav-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-bar a.active {
+    font-weight: bold;
+}
+
+/* Intro section styles */
+.intro {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+.intro-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Review section styles */
+.review {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.review form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.review form input[type="text"],
+.review form select,
+.review form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.review form textarea {
+    height: 150px;
+}
+
+.review form .recommend {
+    margin-top: 10px;
+}
+
+/* Book shelf styles */
+.book-shelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.book {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
