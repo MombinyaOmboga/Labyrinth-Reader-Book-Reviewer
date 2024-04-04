@@ -28,6 +28,14 @@ header {
     justify-content: space-between;
 }
 
+
+
+i span{
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .align, .search-bar{
     display: flex;
 }
@@ -65,6 +73,12 @@ header {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    border-bottom: transparent solid 2px; /* Initial border color is transparent */
+    transition: border-bottom-color 0.3s, transform 0.3s; 
+}
+
+.nav-bar a:hover{
+    border-bottom: #f13463 solid 2px;
 }
 
 .nav-bar a.active {
@@ -174,10 +188,12 @@ header {
 .book {
     margin: 10px;
     padding: 10px;
-    border: 1px solid #d3d1d1;
+    border: 1px solid turquoise;
     width: 230px;
     height: 200px;
-    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    transition: all .2s ease-in-out;
+    border-radius: 8px;
 }
 
 .book img {
@@ -187,7 +203,18 @@ header {
 }
 
 .action-buttons{
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.action-buttons button{
+    background-color: #f13463;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 5px;
 }
 
 .book button {
@@ -199,6 +226,16 @@ header {
     cursor: pointer;
 }
 
+#shelf{
+    background-color: white;
+}
+
+#book h2{
+    border-bottom: #f13463 solid 3px;
+    width: fit-content;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /* Footer styles */
 footer {
